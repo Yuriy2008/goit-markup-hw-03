@@ -27,6 +27,16 @@ body {
   margin-right: auto;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .logo-header {
   font-family: var(--title-font);
   font-style: normal;
@@ -124,6 +134,9 @@ body {
 .list {
   list-style: none;
   color: #000000;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
 }
 
 .adres {
