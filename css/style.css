@@ -168,24 +168,6 @@ img {
   border: 0;
 }
 
-.btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-
-.btn:hover,
-.btn:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
 .list {
   list-style: none;
   color: #000000;
@@ -230,6 +212,7 @@ img {
 }
 
 .title-h2 {
+  margin-top: 170px;
   margin-bottom: 50px;
   font-family: Roboto;
   font-style: normal;
@@ -279,12 +262,13 @@ img {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: calc(-1 * 30px);
   margin-top: calc(-1 * 30px);
 }
 
 .team-list-item {
-  flex-basis: calc(100% - 4 * 30px / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
   margin-left: 30px;
   margin-top: 30px;
   background-color: #ffffff;
@@ -309,6 +293,9 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--title-cl);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .text {
@@ -324,15 +311,20 @@ img {
   color: #757575;
 }
 
-.team-list-item-container {
-  padding: 30px 55px;
+.text-person {
   text-align: center;
 }
 
-footer {
+.footer-section {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+.logo-down {
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
 .text-adres {
   font-style: normal;
   font-weight: normal;
@@ -343,6 +335,9 @@ footer {
   letter-spacing: 0.03em;
 
   color: #ffffff;
+}
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .link-ex,
@@ -357,4 +352,55 @@ footer {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn-list-item {
+  margin: 8px;
+}
+.btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  border: 0;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+}
+.galery-list-item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+}
+.galery-list-container {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
